@@ -1,46 +1,85 @@
-# 🤝 Collaborative AI-Powered Code Generation & Collaboration Platform
+# 🧾 Project Raseed – AI-Powered Receipt Manager & Financial Assistant
 
-A full-stack web application designed to enhance project collaboration through AI-powered features. Built with a modern tech stack including Node.js, Express, React (Vite), and Redis for real-time capabilities.
+Project Raseed is a smart, AI-driven personal assistant built to digitize, organize, and analyze receipts directly within Google Wallet. It helps users track expenses, categorize spending, receive reminders, and optimize financial decisions through a seamless mobile and web experience.
 
 ---
 
-## 🌟 Features
+## 🚀 Features
 
-- 🔐 User registration and authentication
-- 📁 Project creation and management
-- 🤖 AI-powered code suggestions (via Google Generative AI)
-- 🔄 Real-time collaboration features (Redis Pub/Sub)
-- 🧩 Modular, component-driven UI (Tailwind CSS + Vite)
-- ⚙️ Scalable backend with REST APIs and structured controllers
+- 📸 **Multimodal Receipt Ingestion**  
+  Upload receipts via photo, video, or live stream. OCR + Gemini models extract line-item details in any language.
+
+- 🧠 **AI-Powered Categorization & Insights**  
+  Auto-categorizes expenses (Needs, Luxury, Subscriptions, etc.) and offers savings suggestions (Ghost Expenses, Trends).
+
+- 🛍️ **Smart Grocery & Shopping Lists**  
+  Generates frequently bought items and shopping suggestions based on past receipts.
+
+- 🔔 **Intelligent Reminders**  
+  - Return/replacement deadlines for e-commerce
+  - Loan/premium/insurance due reminders
+  - Subscription renewals
+
+- 🧾 **IT Return Ready**  
+  Lists eligible items for tax deductions at year-end.
+
+- 💬 **Voice Assistant + Query Chatbot**  
+  Ask in any language:  
+  _“Do I have detergent for this week?”_,  
+  _“How much did I spend on dining last month?”_
+
+- 💼 **Google Wallet Passes**  
+  Generate dynamic Wallet Passes for shopping lists, budget reports, tax documents, and expense summaries.
+
+- 🔗 **Offline Receipt Sync**  
+  Auto-upload receipts when internet connection is restored.
+
+- 👥 **Group Expense Separation**  
+  Ideal for managing shared expenses on trips, projects, and events.
 
 ---
 
 ## 🧰 Tech Stack
 
-| Layer          | Technology                    |
-|----------------|-------------------------------|
-| **Frontend**   | React, Vite, Tailwind CSS      |
-| **Backend**    | Node.js, Express               |
-| **Database**   | MongoDB                        |
-| **Realtime**   | Redis                          |
-| **AI API**     | Google Generative AI (Gemini)  |
+| Layer         | Technologies                                                                 |
+|---------------|-------------------------------------------------------------------------------|
+| **Frontend**  | React (Web), Flutter (Mobile)                                                |
+| **Backend**   | Firebase Functions, Node.js (Cloud Run optional)                             |
+| **AI/ML**     | Gemini 1.5 Pro, Vertex AI, Gemma                                              |
+| **Storage**   | Firebase Storage                                                             |
+| **Database**  | Firestore (NoSQL)                                                            |
+| **Notifications** | Firebase Cloud Messaging (FCM), Cloud Scheduler                        |
+| **APIs**      | Google Wallet API, Calendar API, Gmail API, Maps API                         |
 
 ---
 
-## 🚀 Getting Started
+## 🖥️ Screens & Mockups
 
-### ✅ Prerequisites
+- 📲 **Main Screen**: Upload receipts, view expense trends  
+- 🧾 **Receipt View**: Line item breakdown  
+- 💬 **Chatbot View**: Natural language queries  
+- 📈 **Spending Dashboard**: Insights, ghost expenses, budget alerts  
+- 💳 **Wallet Pass Generator**: Auto-create passes with item details
 
-- [Node.js](https://nodejs.org/) (v16+ recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- (Optional) Redis server for real-time collaboration
+(*Mockups available in `/ui-mockups/` folder*)
 
 ---
 
-### 📦 Installation
+## 🛠 Getting Started
 
-#### 🔧 Backend Setup
+### 📋 Prerequisites
+
+- Node.js (v16+)
+- Firebase CLI
+- Flutter SDK (for mobile)
+- Google Cloud Project with Wallet API enabled
+- Vertex AI + Gemini API access
+
+---
+
+### 🔧 Setup
+
+1. **Clone the repository**
 
 ```bash
-cd backend
-npm install
+git clone https://github.com/yourusername/project-raseed.git
